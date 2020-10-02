@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class Fib
+{
+public static void main(String[] args)
+{
+Scanner no = new Scanner(System.in);
+System.out.print("Enter the position of the term to be found: ");
+int n = no.nextInt();
+System.out.println("The required term is: " + fb(n));
+}
+public static int fb(int n)
+{
+if(n<=1)
+return n;
+else return fb(n-2) + fb(n-1);
+}
+}
