@@ -1,0 +1,24 @@
+import java.util.*;
+class PrimeN
+{
+public static void main(String[] args)
+{
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter n and x for nth prime no. starting
+after x: ");
+int n = sc.nextInt();
+int x = sc.nextInt();
+int c = 0;
+int d;
+while (c<n){
+x++;
+for(d=2;d<=x;d++){
+if(x % d == 0)
+break;
+}
+if (d==x)
+c++;
+}
+System.out.println("Required prime no: "+ x );
+}
+}
