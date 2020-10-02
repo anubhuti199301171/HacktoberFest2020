@@ -1,0 +1,15 @@
+import java.util.*;
+class Table
+{
+public static void main(String[] args)
+{
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter x & y for table of x from 1 to y:");
+int x = sc.nextInt();
+int y = sc.nextInt();
+int i = 1;
+for (i=1; i<=y; i++){
+System.out.println(x + " x " + i + " = " + (x*i));
+}
+}
+}
